@@ -11,23 +11,36 @@ const loadingMessage = document.getElementById('loadingMessage');
 let products = [];
 
 // Load products from JSON file
+// ... (other code)
+
+// Load products from JSON file
 async function loadProducts() {
     try {
         loadingMessage.style.display = 'block';
         const response = await fetch('products.json');
         
         if (!response.ok) {
-            throw new Error('Failed to load products');
+            throw new Error(`HTTP error! status: ${response.status}`);
         }
         
-        products = await response.json();
-        displayProducts(products);
+        const data = await response.json();
+        
+        // Check if the data has the products array
+        if (data.products && Array.isArray(data.products)) {
+            products = data.products;
+            displayProducts(products);
+        } else {
+            throw new Error('Invalid JSON structure: expected an object with a "products" array');
+        }
+        
         loadingMessage.style.display = 'none';
     } catch (error) {
         console.error('Error loading products:', error);
-        loadingMessage.innerHTML = 'Error loading products. Please refresh the page.';
+        loadingMessage.innerHTML = `Error loading products: ${error.message}. Please refresh the page.`;
     }
 }
+
+// ... (rest of the code)
 
 // Display products
 function displayProducts(productsToShow) {
@@ -160,4 +173,5 @@ window.addEventListener('resize', () => {
     } else {
         navLinks.style.display = 'none';
     }
+
 });
