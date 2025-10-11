@@ -6,7 +6,9 @@
       "description": "Light and breezy floral dress perfect for summer outings.",
       "price": "299.0",
       "category": "dresses",
-      "image": "https://drive.google.com/file/d/1PztxrT7TL2gYuLXF0F0VfPQrXnvQTO6q/view?usp=sharing",
+      "image": [
+        "images/orange_dress.png"
+      ],
       "affiliateLink": "https://affiliate.meesho.com/collection/ODQ5NjEwJTNBJTNBJTNBMzQ3MDQ2NzklM0ElM0ElM0Fub3JtYWw"
     },
     {
@@ -75,3 +77,4 @@
   ]
 
 }
+
