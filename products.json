@@ -2,8 +2,8 @@
   "products": [
     {
       "id": 1,
-      "name": "Floral Summer Dress",
-      "description": "Light and breezy floral dress perfect for summer outings.",
+      "name": "Women Smocked Fit and Flare Dress",
+      "description": "Women's Smocking Party Wear Off Shoulder Trending Dresses",
       "price": "₹299.0",
       "category": "dresses",
       "image": [
@@ -13,8 +13,8 @@
     },
     {
       "id": 2,
-      "name": "Classic White Tee",
-      "description": "Essential white t-shirt that pairs with everything in your wardrobe.",
+      "name": "Stylish Women Dress, frock,Kurti",
+      "description": "Three-Quarter Sleeves Pattern : Printed",
       "price": "₹199.99",
       "category": "tops",
      "image": ["images/red_dress.png"],
@@ -77,5 +77,6 @@
   ]
 
 }
+
 
 
