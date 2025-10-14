@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Floral Summer Dress",
       "description": "Light and breezy floral dress perfect for summer outings.",
-      "price": "299.0",
+      "price": "₹299.0",
       "category": "dresses",
       "image": [
         "images/orange_dress.png"
@@ -15,10 +15,10 @@
       "id": 2,
       "name": "Classic White Tee",
       "description": "Essential white t-shirt that pairs with everything in your wardrobe.",
-      "price": "$19.99",
+      "price": "₹199.99",
       "category": "tops",
-      "image": "https://drive.google.com/file/d/1nywVduXy6R3Hv0FjgTpngtD7b8_ec3Kk/view?usp=sharing",
-      "affiliateLink": "https://amazon.com"
+     "image": ["images/red_dress.png"],
+      "affiliateLink": "https://affiliate.meesho.com/collection/ODcwNDE3JTNBJTNBJTNBMzQ3MDQ2NzklM0ElM0ElM0Fub3JtYWw"
     },
     {
       "id": 3,
@@ -77,4 +77,5 @@
   ]
 
 }
+
 
