@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstaShop 2027 | Best Amazon Finds</title>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://insta_shop_2027.github.io/">
+    <meta property="og:title" content="InstaShop 2027 | Aesthetic Amazon Finds">
+    <meta property="og:description" content="Shop the best aesthetic Amazon finds, tech gadgets, home decor, and fashion recommendations straight from my Instagram bio.">
+    <meta property="og:image" content="assets/shop_logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="InstaShop 2027 | Aesthetic Amazon Finds">
+    <meta property="twitter:description" content="Shop the best aesthetic Amazon finds, tech gadgets, home decor, and fashion recommendations straight from my Instagram bio.">
+    <meta property="twitter:image" content="assets/shop_logo.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Premium Ambient Glow Effects in Background -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <div class="container">
+        <!-- Top Affiliate Disclosure Banner -->
+        <div class="top-disclosure">
+            <span class="disclosure-badge"><i class="fa-solid fa-circle-info"></i> Affiliate Disclosure</span>
+            <p class="disclosure-text">As an Amazon Associate I earn from qualifying purchases. This supports the page at no extra cost to you.</p>
+        </div>
+
+        <!-- Profile Header -->
+        <header class="header">
+            <div class="profile-avatar-container">
+                <img src="assets/shop_logo.png" alt="InstaShop 2027 Logo" class="profile-avatar" id="header-logo">
+                <span class="verified-badge"><i class="fa-solid fa-circle-check"></i></span>
+            </div>
+            
+            <h1 class="profile-name">@insta_shop_2027</h1>
+            <p class="profile-tagline">Curated Amazon Finds & Aesthetic Daily Essentials</p>
+            
+            <div class="header-meta">
+                <span class="last-updated" id="last-updated-text">
+                    <i class="fa-regular fa-calendar-check"></i> Loading status...
+                </span>
+            </div>
+
+            <div class="header-actions">
+                <a href="https://www.instagram.com/insta_shop_2027/" target="_blank" rel="noopener noreferrer" class="btn btn-instagram">
+                    <i class="fa-brands fa-instagram"></i> Follow on Instagram
+                </a>
+            </div>
+        </header>
+
+        <!-- Search & Filter Controls Section -->
+        <section class="controls-section">
+            <div class="search-bar-container">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" id="search-input" placeholder="Search products..." autocomplete="off">
+                <button id="clear-search-btn" class="clear-search-btn" aria-label="Clear search" style="display: none;">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Categories Horizontal Filter Bar -->
+            <div class="categories-bar-wrapper">
+                <button class="scroll-arrow scroll-left" id="scroll-left-btn" aria-label="Scroll left">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <div class="categories-container" id="categories-container">
+                    <!-- Dynamic categories will be injected here by JS -->
+                    <button class="category-chip active" data-category="all">All Items</button>
+                </div>
+                <button class="scroll-arrow scroll-right" id="scroll-right-btn" aria-label="Scroll right">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- Product Grid Grid Section -->
+        <main class="products-section">
+            <div class="results-count-container">
+                <span class="results-count" id="results-count">Showing 0 products</span>
+            </div>
+            
+            <!-- Shimmer loading state -->
+            <div class="product-grid" id="product-grid">
+                <div class="shimmer-card"></div>
+                <div class="shimmer-card"></div>
+                <div class="shimmer-card"></div>
+                <div class="shimmer-card"></div>
+            </div>
+
+            <!-- Empty State -->
+            <div class="empty-state" id="empty-state" style="display: none;">
+                <div class="empty-state-icon">
+                    <i class="fa-solid fa-box-open"></i>
+                </div>
+                <h3>No products found</h3>
+                <p>Try resetting filters or searching for something else!</p>
+                <button class="btn btn-primary" id="reset-filters-btn">Reset Filters</button>
+            </div>
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/insta_shop_2027/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link" id="share-website-btn" aria-label="Share Store Link">
+                    <i class="fa-solid fa-share-nodes"></i>
+                </a>
+            </div>
+            
+            <div class="footer-disclosure">
+                <p><strong>Amazon Associates Program Disclosure:</strong></p>
+                <p class="disclosure-legal">As an Amazon Associate I earn from qualifying purchases. Some links on this page are affiliate links, meaning that if you click through and make a purchase, I may earn a small commission at no additional cost to you. This helps support my product curation journey!</p>
+            </div>
+            
+            <div class="footer-credits">
+                <p>&copy; 2026 @insta_shop_2027. All rights reserved.</p>
+                <p class="built-with">Made with <i class="fa-solid fa-heart animate-pulse"></i> for Instagram shoppers</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Toast Notification for Actions -->
+    <div id="toast" class="toast" role="alert">
+        <span class="toast-message" id="toast-message">Link copied!</span>
+    </div>
+
+    <!-- Premium Instagram Reel Modal -->
+    <div id="reel-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-backdrop" id="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close-btn" id="close-modal-btn" aria-label="Close modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h3 id="modal-title" class="modal-title">Watch Product Reel</h3>
+            <div class="modal-body" id="modal-body">
+                <!-- Instagram Embed will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Instagram Embed SDK -->
+    <script async src="https://www.instagram.com/embed.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
