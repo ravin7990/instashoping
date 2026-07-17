@@ -2,7 +2,7 @@
   {
     "id": "womens-vneck-maxi-dress",
     "title": "Sugathari Women's V-Neck A-Line Maxi Dress",
-    "image": "assets/maxi_dress.png",
+    "image": "assets/maxi_dress.webp",
     "price": "₹248",
     "description": "Elegant V-neck maxi dress featuring puff sleeves and a cinched ruched waistband, crafted in a flattering A-line silhouette.",
     "amazonLink": "https://link.amazon/B00Wcnx3P",
@@ -20,12 +20,12 @@
     "amazonLink": "https://www.amazon.in/dp/B08V57LS3B",
     "category": "Home",
     "dateAdded": "2026-07-15",
-    "pinned": true,
+    "pinned": true
   },
   {
     "id": "wireless-keyboard",
     "title": "Women’s Pyjama Set|Cute Printed T-Shirt & Shorts",
-    "image": "assets/keyboard.png",
+    "image": "assets/keyboard.webp",
     "price": "₹299",
     "description": "Soft Cotton Blend Women Night Suit Sleepwear| Shorts Set for Women.",
     "amazonLink": "https://www.amazon.in/dp/B09V7Y1Z7R",
